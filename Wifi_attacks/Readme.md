@@ -91,7 +91,7 @@ To generate a wordlist, we can use the crunch command.
 
 > And in the andriod device we are getting web page asking for password.
 
-![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/084572c4-db3d-4d1a-8e93-4e1cfbc4fba6)
+![WhatsApp Image 2024-02-24 at 21 06 42_2854b01c](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/917fd153-a0a7-40df-948e-100826445616)
 
 > And we enter the password in the website it reflected back when we close the tool.
 
