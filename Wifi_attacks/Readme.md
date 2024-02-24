@@ -41,3 +41,81 @@ WPS Vulnerabilities: WiFi Protected Setup (WPS) is a feature that simplifies the
 
 ![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/7a6109ee-e692-4e69-aa48-1715f2918152)
 
+## Perform Wi-Fi fingerprinting
+
+### Wifite 
+
+> we swtich to `sudo` user and start wifite and scan the wifi network the around the area
+
+![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/40887588-5320-4fba-a655-bda03a21ebeb)
+
+> So we can see it shows all the available networks and how many clients are connected to it.
+
+# Create an Access point with any Wi-Fi encryption standard and start testing the security of that connection using any Wi-Fi security testing tools, which should include (Aircrack-Ng, Wifite, not limited). Try to capture the 4-way handshake using these methods.
+
+![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/f66f3059-2e99-4f22-80c7-ce59f8454ecb)
+
+> So our target here `Target ` so we will be attacking this network and it's using the `wpa-p`
+
+![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/da0be388-5c81-452b-8c40-f457c19b906f)
+
+> So it 1 deauthenticate the clients in that is connected to target network try to capture the handshake.
+
+![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/a64ac71c-bcd5-4b92-8c4b-15cac0e921e4)
+
+> It saves it as a pcap file and try to crack the password using the specified wordlist and we can see the key after cracking the i.e `12345678`.
+
+> So we try analyze the wireshark pcap that is saved along with this we can see that the 4 hand shake was captured.
+
+![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/4b88ed9e-522d-4eb1-b123-385a4a407bdb)
+
+## Also you have to create your dictionary file for cracking the passwords.
+
+To generate a wordlist, we can use the crunch command.
+
+`crunch 8 12 012345678abcdefghijklmnopqrstuvwxyz -o wordlist.txt`
+
+![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/50dee5a4-377c-40ea-a397-2a1adef4382b)
+
+# Use Rouge AP (WifiPhisher) to create an Evil twin, perform a basic phishing attack using this rouge AP, and document the difference between the two attacks you have performed.
+
+> We have install `WifiPhisher`. `sudo apt install WifiPhisher`
+
+> So with help of `WifiPhisher` we created fake Amrita wifi and we will try to connect ot it.
+
+![WhatsApp Image 2024-02-24 at 21 02 51_9772fd97](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/f18a9c4f-7c9d-4747-985a-acd5ce8b96b1)
+
+> So as soon as the andriod device is connected it shows in the screen.
+
+![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/012f5357-2be8-4100-97de-26f3d69ce0fa)
+
+> And in the andriod device we are getting web page asking for password.
+
+![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/084572c4-db3d-4d1a-8e93-4e1cfbc4fba6)
+
+> And we enter the password in the website it reflected back when we close the tool.
+
+![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/ed620ff2-629e-494b-abb6-ccea7ae5e9b4)
+
+
+# Learn the protocol level working of WPA3 and how it differs from WPA2.
+WiFi Protected Access 3 (WPA3) is the security protocol for WiFi networks succeeding WPA2. It enhances the security features and addresses some of the security vulnerabilities provided by WPA2.
+
+Key Establishment and Authentication
+WPA3 introduced a handshake protocol called Simultaneous Authentication of Equals (SAE), which is based on DragonFly Key Exchange Protocol. This mitigated the vulnerabilities present in WPA2's four way handshake, hence making the WPA3 resistant to offline dictionary attacks and password guessing attacks.
+
+Encryption
+WPA3 introduced support for Galois Counter Mode (GCMP). This offers similar security to Chaining Message Authentication Code Protocol (CCMP) but is more efficient in terms of processing power, which can improve battery life of the devices.
+
+Protection against Brute Force Attacks
+WPA3 incorporated stronger protections against brute force attacks through the use of hash to group feature in the DragonFly handshake protocol. This made it significantly harder for attackers to guess the passphrase by making repeated brute force attempts.
+
+Forward Secrecy
+WPA3 offers perfect forward secrecy ensuring that even if an attacker were to compromise the network's security key in the future, they would not be able to decrypt past data transmitted in the network.
+
+
+
+
+
+
+
