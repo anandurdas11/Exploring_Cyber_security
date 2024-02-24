@@ -81,6 +81,15 @@ To generate a wordlist, we can use the crunch command.
 
 > We have install `WifiPhisher`. `sudo apt install WifiPhisher`
 
+ When run `WifiPhisher` we have to select which wifi fake have to create.
+
+![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/ce3690ef-c263-4de0-9d6d-95ed8099820b)
+
+
+> We have to select what phishing we have to perform i have select auth login
+
+![image](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/5810c07b-44f8-4f94-b598-5a12fa6c9d21)
+
 > So with help of `WifiPhisher` we created fake Amrita wifi and we will try to connect ot it.
 
 ![WhatsApp Image 2024-02-24 at 21 02 51_9772fd97](https://github.com/anandurdas11/Exploring_Cyber_security/assets/83402050/f18a9c4f-7c9d-4747-985a-acd5ce8b96b1)
